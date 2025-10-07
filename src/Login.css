@@ -1,0 +1,124 @@
+body.login-signup {
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.split-container {
+  display: flex;
+  width: 900px;
+  max-width: 95%;
+  max-height: 90vh;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+
+.left-card, .right-card {
+  padding: 40px 30px;
+}
+
+.left-card {
+  background: #f9f9f9;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.left-card input,
+.left-card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.left-card button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.left-card .small-text {
+  text-align: center;
+  font-size: 13px;
+}
+
+.left-card .link {
+  color: teal;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.right-card {
+  background: linear-gradient(to bottom, #00695c, #26a69a);
+  color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 35px;
+  overflow-y: auto;
+}
+
+.right-card h2 {
+  margin-bottom: 15px;
+}
+
+.right-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.right-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.right-card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #1abc9c;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+}
+
+.error-popup {
+  background: #e74c3c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
